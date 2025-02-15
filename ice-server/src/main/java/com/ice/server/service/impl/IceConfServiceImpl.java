@@ -570,6 +570,7 @@ public class IceConfServiceImpl implements IceConfService {
         createConf.setName(!StringUtils.hasLength(editNode.getName()) ? "" : editNode.getName());
         if (NodeTypeEnum.isLeaf(editNode.getNodeType())) {
             LeafNodeInfo leafNodeInfo = leafClassCheck(app, editNode.getConfName(), editNode.getNodeType());
+            // todo 排查此处 @limoukun 2025-1-3 17:23:41
             if (StringUtils.hasLength(editNode.getConfField())) {
                 String checkRes = ServerConstant.checkIllegalAndAdjustJson(editNode, leafNodeInfo);
                 if (checkRes != null) {

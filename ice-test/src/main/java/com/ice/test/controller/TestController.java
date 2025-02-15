@@ -27,7 +27,7 @@ public class TestController {
     @RequestMapping(value = "/recharge", method = RequestMethod.GET)
     public String recharge(@RequestParam Integer cost, @RequestParam Integer uid) {
         IcePack pack = new IcePack();
-        pack.setScene("recharge");
+        pack.setScene("recharge-1");
         IceRoam roam = new IceRoam();
         roam.put("cost", cost);
         roam.put("uid", uid);

@@ -10,7 +10,7 @@
                 </pattern>
             </layout>
         </appender>
-        <root level="INFO">
+        <root level="DEBUG">
             <!--appender将会添加到这个logger-->
             <appender-ref ref="consoleLog"/>
         </root>

@@ -8,9 +8,12 @@ import java.util.Map;
  */
 public enum EditTypeEnum {
 
+    // 添加子节点
     ADD_SON(1),
+    // 修改节点
     EDIT(2),
     DELETE(3),
+    // 添加前向节点
     ADD_FORWARD(4),
     EXCHANGE(5),
     MOVE(6);
